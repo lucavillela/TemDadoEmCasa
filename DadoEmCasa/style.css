@@ -1,13 +1,13 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Eczar', serif;
     
 }
 
 header{
     overflow: hidden;
     background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
-    height: 200px;
     position: fixed; 
     top: 0; 
     width: 100%; 
@@ -26,7 +26,6 @@ body{
 .titulo{
     display: flex;
     justify-content: center;
-    font-family: 'Eczar';
     font-style: normal;
     font-weight: 600;
     font-size: 45px;
@@ -71,86 +70,67 @@ body{
 
 .nome{
     color: #FFF0D4;
-    font-family: 'Eczar';
     font-weight: 600;
     padding: 10px;
     font-size: 20px;
 }
 
-.fotodado4 img{
+.fotodado img{
     width: 100px;
     height: 100px;
     padding: 20px;
+}
+
+#dado4 img{
     animation-name: rodoNunca;
     animation-iteration-count: 1;
     animation-duration: 2s;
     animation-fill-mode: both;
 }
 
-.fotodado6 img{
-    width: 100px;
-    height: 100px;
-    padding: 20px;
+#dado6 img{
     animation-name: rodoNunca;
     animation-iteration-count: 1;
     animation-duration: 2s;
     animation-fill-mode: both;
 }
 
-.fotodado8 img{
-    width: 100px;
-    height: 100px;
-    padding: 20px;
+#dado8 img{
     animation-name: rodoNunca;
     animation-iteration-count: 1;
     animation-duration: 2s;
     animation-fill-mode: both;
 }
 
-.fotodado10 img{
-    width: 100px;
-    height: 100px;
-    padding: 20px;
+#dado10 img{
     animation-name: rodoNunca;
     animation-iteration-count: 1;
     animation-duration: 2s;
     animation-fill-mode: both;
 }
 
-.fotodado12 img{
-    width: 100px;
-    height: 100px;
-    padding: 20px;
+#dado12 img{
     animation-name: rodoNunca;
     animation-iteration-count: 1;
     animation-duration: 2s;
     animation-fill-mode: both;
 }
 
-.fotodado20 img{
-    width: 100px;
-    height: 100px;
-    padding: 20px;
+#dado20 img{
     animation-name: rodoNunca;
     animation-iteration-count: 1;
     animation-duration: 2s;
     animation-fill-mode: both;
 }
 
-.fotodadoUni img{
-    width: 100px;
-    height: 100px;
-    padding: 20px;
+#dado10z img{
     animation-name: rodoNunca;
     animation-iteration-count: 1;
     animation-duration: 2s;
     animation-fill-mode: both;
 }
 
-.fotodadoCent img{
-    width: 100px;
-    height: 100px;
-    padding: 20px;
+#dado100 img{
     animation-name: rodoNunca;
     animation-iteration-count: 1;
     animation-duration: 2s;
@@ -178,7 +158,6 @@ body{
 .numero{
     font-size: 30px;
     color: black;
-    font-family: 'Eczar';
     font-weight: 900;
     position: absolute;
     top: 28%;
@@ -188,19 +167,64 @@ body{
 }
 
 #numero4{
-    top: 33%;
+    top: 32%;
+    animation-name: rodoNunca;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+#numero6{
+    animation-name: rodoNunca;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+#numero8{
+    animation-name: rodoNunca;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+#numero10{
+    animation-name: rodoNunca;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+#numero12{
+    animation-name: rodoNunca;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-fill-mode: both;
 }
 
 #numero20{
-    top: 30%;
+    font-size: 22px;
+    top: 32%;
+    animation-name: rodoNunca;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-fill-mode: both;
 }
 
 #numero10z{
     left: 87px;
+    animation-name: rodoNunca;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-fill-mode: both;
 }
 
 #numero100{
     left: -85px;
+    animation-name: rodoNunca;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-fill-mode: both;
 }
 
 @keyframes rodoNunca{
@@ -208,6 +232,66 @@ body{
         transform: rotate(0deg);
     }
     100% {
-        transform: rotate(720deg);
+        transform: rotate(1800deg);
     }
   }
+
+@media all and (max-width: 800px){
+    .grid {
+        padding: 30px;
+        display: grid;
+        grid-gap: 30px;
+        column-gap: 20px;
+        row-gap: 70px;
+        grid-template-columns: 300px;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .botaozao{
+        background-color: #0F0F0F;
+        border-radius: 10px;
+        border: 3px solid #FFF0D4;
+        width: 200px;
+        height: 400px;
+    }
+
+    .gridteste{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    #numero10z{
+        top: 55%;
+        left: 1px;
+        animation-name: rodoNunca;
+        animation-iteration-count: 1;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+    }
+
+    #numero100{
+        top: 17%;
+        left: 1px;
+        animation-name: rodoNunca;
+        animation-iteration-count: 1;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+    }
+
+    .titulo{
+        display: flex;
+        justify-content: center;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        color: #FFF0D4;
+        padding: 30px;
+    }
+
+    .blocao1{
+        display: none;
+    }
+}

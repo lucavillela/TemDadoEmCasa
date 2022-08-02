@@ -5,16 +5,20 @@ botao4.addEventListener("click", rand4, false);
 
 async function rand4(){
     document.querySelector('#numero4').textContent = "?";
-    await sleep(1.5);
+    await sleep(0.6);
     document.querySelector('#numero4').textContent = Math.floor(Math.random() * 4 + 1);
 }
 
 function restartAnimation4(event) {
-    let fotodado = document.querySelector(".fotodado4 img");
+    let fotodado = document.querySelector("#dado4 img");
+    let numero = document.querySelector("#numero4");
     fotodado.style.animationName = "none";
+    numero.style.animationName = "none";
 
     requestAnimationFrame(() =>{
         fotodado.style.animationName = "";
+        numero.style.animationName = "";
+
     });
 }
 
@@ -25,16 +29,19 @@ botao6.addEventListener("click", rand6, false);
 
 async function rand6(){
     document.querySelector('#numero6').textContent = "?";
-    await sleep(1.5);
+    await sleep(0.6);
     document.querySelector('#numero6').textContent = Math.floor(Math.random() * 6 + 1);
 }
 
 function restartAnimation6(event) {
-    let fotodado = document.querySelector(".fotodado6 img");
+    let fotodado = document.querySelector("#dado6 img");
+    let numero = document.querySelector("#numero6");
     fotodado.style.animationName = "none";
+    numero.style.animationName = "none";
 
     requestAnimationFrame(() =>{
         fotodado.style.animationName = "";
+        numero.style.animationName = "";
     });
 }
 
@@ -44,16 +51,19 @@ botao8.addEventListener("click", rand8, false);
 
 async function rand8(){
     document.querySelector('#numero8').textContent = "?";
-    await sleep(1.5);
+    await sleep(0.6);
     document.querySelector('#numero8').textContent = Math.floor(Math.random() * 8 + 1);
 }
 
 function restartAnimation8(event) {
-    let fotodado = document.querySelector(".fotodado8 img");
+    let fotodado = document.querySelector("#dado8 img");
+    let numero = document.querySelector("#numero8");
     fotodado.style.animationName = "none";
+    numero.style.animationName = "none";
 
     requestAnimationFrame(() =>{
         fotodado.style.animationName = "";
+        numero.style.animationName = "";
     });
 }
 
@@ -63,16 +73,19 @@ botao10.addEventListener("click", rand10, false);
 
 async function rand10(){
     document.querySelector('#numero10').textContent = "?";
-    await sleep(1.5);
+    await sleep(0.6);
     document.querySelector('#numero10').textContent = Math.floor(Math.random() * 10 + 1);
 }
 
 function restartAnimation10(event) {
-    let fotodado = document.querySelector(".fotodado10 img");
+    let fotodado = document.querySelector("#dado10 img");
+    let numero = document.querySelector("#numero10");
     fotodado.style.animationName = "none";
+    numero.style.animationName = "none";
 
     requestAnimationFrame(() =>{
         fotodado.style.animationName = "";
+        numero.style.animationName = "";
     });
 }
 
@@ -82,16 +95,19 @@ botao12.addEventListener("click", rand12, false);
 
 async function rand12(){
     document.querySelector('#numero12').textContent = "?";
-    await sleep(1.5);
+    await sleep(0.6);
     document.querySelector('#numero12').textContent = Math.floor(Math.random() * 12 + 1);
 }
 
 function restartAnimation12(event) {
-    let fotodado = document.querySelector(".fotodado12 img");
+    let fotodado = document.querySelector("#dado12 img");
+    let numero = document.querySelector("#numero12");
     fotodado.style.animationName = "none";
+    numero.style.animationName = "none";
 
     requestAnimationFrame(() =>{
         fotodado.style.animationName = "";
+        numero.style.animationName = "";
     });
 }
 
@@ -101,16 +117,19 @@ botao20.addEventListener("click", rand20, false);
 
 async function rand20(){
     document.querySelector('#numero20').textContent = "?";
-    await sleep(1.5);
+    await sleep(0.6);
     document.querySelector('#numero20').textContent = Math.floor(Math.random() * 20 + 1);
 }
 
 function restartAnimation20(event) {
-    let fotodado = document.querySelector(".fotodado20 img");
+    let fotodado = document.querySelector("#dado20 img");
+    let numero = document.querySelector("#numero20");
     fotodado.style.animationName = "none";
+    numero.style.animationName = "none";
 
     requestAnimationFrame(() =>{
         fotodado.style.animationName = "";
+        numero.style.animationName = "";
     });
 }
 
@@ -121,21 +140,27 @@ botaozao.addEventListener("click", randZao, false);
 async function randZao(){
     document.querySelector('#numero10z').textContent = "?";
     document.querySelector('#numero100').textContent = "?";
-    await sleep(1.5);
+    await sleep(0.6);
     document.querySelector('#numero10z').textContent = Math.floor(Math.random() * 10);
     var dezena = ["00","10","20","30","40","50","60","70","80","90"];
     document.querySelector('#numero100').textContent = dezena[Math.floor(Math.random() * dezena.length)];
 }
 
 function restartAnimationZao(event) {
-    let fotodado = document.querySelector(".fotodadoUni img");
-    let fotodadoZao = document.querySelector(".fotodadoCent img");
+    let fotodado = document.querySelector("#dado10z img");
+    let numero = document.querySelector("#numero10z");
+    let fotodadoZao = document.querySelector("#dado100 img");
+    let numero100 = document.querySelector("#numero100");
     fotodado.style.animationName = "none";
+    numero.style.animationName = "none";
     fotodadoZao.style.animationName = "none";
+    numero100.style.animationName = "none";
 
     requestAnimationFrame(() =>{
         fotodado.style.animationName = "";
+        numero.style.animationName = "";
         fotodadoZao.style.animationName = "";
+        numero100.style.animationName = "";
     });
 }
 
