@@ -1,3 +1,6 @@
-# TemDadoEmCasa
-![Captura de tela 2023-10-26 153959](https://github.com/lucavillela/TemDadoEmCasa/assets/80333466/c9143b76-cd91-4a8a-b097-6e2aef695888)
-Rolador de dados para RPG e outros afins, acesse em: https://tem-dado-em-casa.vercel.app/
+# DadoEmCasa
+- Rolador de dados para RPG e outros afins, acesse em: https://dadoemcasa.vercel.app/
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/87899e2c-8b06-4ae5-ae92-58855471465a" alt="gif de demonstração" width="800"/>
+</div>
