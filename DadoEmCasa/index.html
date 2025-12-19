@@ -109,6 +109,78 @@
       </div>
     </div>
 
+    <!-- ÁREA DE MÚLTIPLOS DADOS -->
+    <div class="multi-dice-container">
+      <div class="multi-dice-header">
+        <h2>Rolar Múltiplos Dados</h2>
+        <div class="dice-selector">
+          <button class="selector-btn" data-sides="4">
+            <img src="imagens/d4.png" alt="d4" />
+            <span>d4</span>
+          </button>
+          <button class="selector-btn" data-sides="6">
+            <img src="imagens/d6.png" alt="d6" />
+            <span>d6</span>
+          </button>
+          <button class="selector-btn" data-sides="8">
+            <img src="imagens/d8.png" alt="d8" />
+            <span>d8</span>
+          </button>
+          <button class="selector-btn" data-sides="10">
+            <img src="imagens/d10.png" alt="d10" />
+            <span>d10</span>
+          </button>
+          <button class="selector-btn" data-sides="12">
+            <img src="imagens/d12.png" alt="d12" />
+            <span>d12</span>
+          </button>
+          <button class="selector-btn" data-sides="20">
+            <img src="imagens/d20.png" alt="d20" />
+            <span>d20</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="multi-dice-area" id="multiDiceArea">
+        <p class="empty-message">
+          Clique nos botões acima para adicionar dados (máximo 10)
+        </p>
+      </div>
+
+      <div class="multi-dice-controls">
+        <button class="control-btn roll-all-btn" id="rollAllBtn">
+          Rolar Todos
+        </button>
+        <button class="control-btn clear-btn" id="clearAllBtn">
+          Limpar Todos
+        </button>
+        <div class="sum-display">
+          <span class="sum-label">Soma:</span>
+          <span class="sum-value" id="sumValue">0</span>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <p>Desenvolvido por Luca Torres Villela</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/luca-villela/" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a
+            href="https://github.com/lucavillela/TemDadoEmCasa"
+            target="_blank"
+          >
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://project57.com.br" target="_blank">
+            <i class=""></i> Meu site
+          </a>
+        </div>
+      </div>
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
