@@ -67,3 +67,128 @@ function restartAnimationPercent() {
 async function sleep(seconds) {
   return new Promise((resolve) => setTimeout(resolve, seconds * 1000));
 }
+
+const multiDiceArea = document.getElementById("multiDiceArea");
+const rollAllBtn = document.getElementById("rollAllBtn");
+const clearAllBtn = document.getElementById("clearAllBtn");
+const selectorButtons = document.querySelectorAll(".selector-btn");
+const sumValue = document.getElementById("sumValue");
+
+let diceCounter = 0;
+const MAX_DICE = 10;
+
+selectorButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const sides = parseInt(btn.dataset.sides);
+    addDice(sides);
+  });
+});
+
+function addDice(sides) {
+  const currentDice = multiDiceArea.querySelectorAll(".multi-die").length;
+
+  if (currentDice >= MAX_DICE) {
+    alert(`Máximo de ${MAX_DICE} dados atingido!`);
+    return;
+  }
+
+  const emptyMsg = multiDiceArea.querySelector(".empty-message");
+  if (emptyMsg) {
+    emptyMsg.remove();
+  }
+
+  const diceId = `multi-dice-${diceCounter++}`;
+  const diceElement = document.createElement("div");
+  diceElement.className = "multi-die";
+  diceElement.id = diceId;
+  diceElement.dataset.sides = sides;
+  diceElement.dataset.value = "0";
+
+  diceElement.innerHTML = `
+    <button class="remove-btn" onclick="removeDice('${diceId}')"> x </button>
+    <img src="imagens/d${sides}.png" alt="d${sides}" />
+    <div class="die-number">?</div>
+    <div class="die-label">d${sides}</div>
+  `;
+
+  multiDiceArea.appendChild(diceElement);
+  updateSum();
+}
+
+function removeDice(diceId) {
+  const dice = document.getElementById(diceId);
+  dice.style.animation = "diceAppear 0.3s ease-in-out reverse";
+
+  setTimeout(() => {
+    dice.remove();
+
+    const remainingDice = multiDiceArea.querySelectorAll(".multi-die").length;
+    if (remainingDice === 0) {
+      multiDiceArea.innerHTML =
+        '<p class="empty-message">Clique nos botões acima para adicionar dados (máximo 10)</p>';
+    }
+    updateSum();
+  }, 300);
+}
+
+rollAllBtn.addEventListener("click", async () => {
+  const allDice = multiDiceArea.querySelectorAll(".multi-die");
+
+  if (allDice.length === 0) {
+    return;
+  }
+
+  allDice.forEach((dice) => {
+    const numberEl = dice.querySelector(".die-number");
+    numberEl.textContent = "?";
+    dice.classList.add("rolling");
+    dice.dataset.value = "0";
+  });
+
+  updateSum();
+  await sleep(0.6);
+
+  allDice.forEach((dice) => {
+    const sides = parseInt(dice.dataset.sides);
+    const numberEl = dice.querySelector(".die-number");
+    const result = Math.floor(Math.random() * sides + 1);
+    numberEl.textContent = result;
+    dice.dataset.value = result;
+
+    setTimeout(() => {
+      dice.classList.remove("rolling");
+    }, 2000);
+  });
+
+  updateSum();
+});
+
+clearAllBtn.addEventListener("click", () => {
+  const allDice = multiDiceArea.querySelectorAll(".multi-die");
+
+  if (allDice.length === 0) {
+    return;
+  }
+
+  allDice.forEach((dice) => {
+    dice.style.animation = "diceAppear 0.3s ease-in-out reverse";
+  });
+
+  setTimeout(() => {
+    multiDiceArea.innerHTML =
+      '<p class="empty-message">Clique nos botões acima para adicionar dados (máximo 10)</p>';
+    updateSum();
+  }, 300);
+});
+
+function updateSum() {
+  const allDice = multiDiceArea.querySelectorAll(".multi-die");
+  let total = 0;
+
+  allDice.forEach((dice) => {
+    const value = parseInt(dice.dataset.value) || 0;
+    total += value;
+  });
+
+  sumValue.textContent = total;
+}

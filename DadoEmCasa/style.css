@@ -1,297 +1,654 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Eczar', serif;
-    
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Eczar", serif;
 }
 
-header{
-    overflow: hidden;
-    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
-    position: fixed; 
-    top: 0; 
-    width: 100%; 
-    z-index: 1;
+header {
+  overflow: hidden;
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
-body{
-    margin-top: 110px;
-    background-color: black;
-    background-image: radial-gradient(50% 50% at 50% 50%, rgba(255, 0, 0, 0.25) 0%, rgba(217, 217, 217, 0) 100%);
-    min-height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
+body {
+  margin-top: 110px;
+  background-color: black;
+  background-image: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 0, 0, 0.25) 0%,
+    rgba(217, 217, 217, 0) 100%
+  );
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
-.titulo{
-    display: flex;
-    justify-content: center;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 45px;
-    color: #FFF0D4;
-    padding: 30px;
+.titulo {
+  display: flex;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  color: #fff0d4;
+  padding: 30px;
 }
 
-.botao{
-    background-color: #0F0F0F;
-    border-radius: 10px;
-    border: 3px solid #FFF0D4;
-    width: 200px;
-    height: 250px;
+.botao {
+  background-color: #0f0f0f;
+  border-radius: 10px;
+  border: 3px solid #fff0d4;
+  width: 200px;
+  height: 250px;
 }
 
-.gridteste{
-    display: grid;
-    grid-template-columns: auto auto;
-
+.gridteste {
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
-.botaozao{
-    background-color: #0F0F0F;
-    border-radius: 10px;
-    border: 3px solid #FFF0D4;
-    width: 350px;
-    height: 250px;
+.botaozao {
+  background-color: #0f0f0f;
+  border-radius: 10px;
+  border: 3px solid #fff0d4;
+  width: 350px;
+  height: 250px;
 }
 
-.blocao1{
-    opacity: 0%;
+.blocao1 {
+  opacity: 0%;
 }
 
-.bloco{
-    transform: scale(1);
-    transition: 0.2s ease-in-out;
+.bloco {
+  transform: scale(1);
+  transition: 0.2s ease-in-out;
 }
 
-.bloco:hover{
-    transform: scale(1.1);
+.bloco:hover {
+  transform: scale(1.1);
 }
 
-.nome{
-    color: #FFF0D4;
-    font-weight: 600;
-    padding: 10px;
-    font-size: 20px;
+.nome {
+  color: #fff0d4;
+  font-weight: 600;
+  padding: 10px;
+  font-size: 20px;
 }
 
-.fotodado img{
-    width: 100px;
-    height: 100px;
-    padding: 20px;
+.fotodado img {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
 }
 
-#dado4 img{
-    animation-name: rodoNunca;
-    animation-iteration-count: 1;
-    animation-duration: 2s;
-    animation-fill-mode: both;
+#dado4 img {
+  animation-name: rodoNunca;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-fill-mode: both;
 }
 
-#dado6 img{
-    animation-name: rodoNunca;
-    animation-iteration-count: 1;
-    animation-duration: 2s;
-    animation-fill-mode: both;
+#dado6 img {
+  animation-name: rodoNunca;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-fill-mode: both;
 }
 
-#dado8 img{
-    animation-name: rodoNunca;
-    animation-iteration-count: 1;
-    animation-duration: 2s;
-    animation-fill-mode: both;
+#dado8 img {
+  animation-name: rodoNunca;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-fill-mode: both;
 }
 
-#dado10 img{
-    animation-name: rodoNunca;
-    animation-iteration-count: 1;
-    animation-duration: 2s;
-    animation-fill-mode: both;
+#dado10 img {
+  animation-name: rodoNunca;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-fill-mode: both;
 }
 
-#dado12 img{
-    animation-name: rodoNunca;
-    animation-iteration-count: 1;
-    animation-duration: 2s;
-    animation-fill-mode: both;
+#dado12 img {
+  animation-name: rodoNunca;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-fill-mode: both;
 }
 
-#dado20 img{
-    animation-name: rodoNunca;
-    animation-iteration-count: 1;
-    animation-duration: 2s;
-    animation-fill-mode: both;
+#dado20 img {
+  animation-name: rodoNunca;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-fill-mode: both;
 }
 
-#dado10z img{
-    animation-name: rodoNunca;
-    animation-iteration-count: 1;
-    animation-duration: 2s;
-    animation-fill-mode: both;
+#dado10z img {
+  animation-name: rodoNunca;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-fill-mode: both;
 }
 
-#dado100 img{
-    animation-name: rodoNunca;
-    animation-iteration-count: 1;
-    animation-duration: 2s;
-    animation-fill-mode: both;
+#dado100 img {
+  animation-name: rodoNunca;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-fill-mode: both;
 }
 
-.grid-container{
-    padding: 30px;
+.grid-container {
+  padding: 30px;
 }
 
 .grid {
+  padding: 30px;
+  display: grid;
+  grid-gap: 30px;
+  column-gap: 20px;
+  row-gap: 70px;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 220px 220px 220px;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+}
+
+.numero {
+  font-size: 30px;
+  color: black;
+  font-weight: 900;
+  position: absolute;
+  top: 28%;
+  width: 100%;
+  left: 0%;
+  z-index: 1;
+}
+
+#numero4 {
+  top: 32%;
+  animation-name: rodoNunca;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+#numero6 {
+  animation-name: rodoNunca;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+#numero8 {
+  animation-name: rodoNunca;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+#numero10 {
+  animation-name: rodoNunca;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+#numero12 {
+  animation-name: rodoNunca;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+#numero20 {
+  font-size: 22px;
+  top: 32%;
+  animation-name: rodoNunca;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+#numero10z {
+  left: 87px;
+  animation-name: rodoNunca;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+#numero100 {
+  left: -85px;
+  animation-name: rodoNunca;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+@keyframes rodoNunca {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+/* MULTI DICE SECTION */
+.multi-dice-container {
+  background: linear-gradient(
+    180deg,
+    rgba(15, 15, 15, 0.8) 0%,
+    rgba(15, 15, 15, 0.95) 100%
+  );
+  border: 3px solid #fff0d4;
+  border-radius: 15px;
+  margin: 50px auto;
+  max-width: 1000px;
+  padding: 30px;
+}
+
+.multi-dice-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.multi-dice-header h2 {
+  color: #fff0d4;
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.dice-selector {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+  justify-content: center;
+  justify-items: center;
+}
+
+.selector-btn {
+  background-color: #1a1a1a;
+  border: 2px solid #fff0d4;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  width: 100px;
+  height: 100px;
+}
+
+.selector-btn:hover {
+  transform: scale(1.05);
+  background-color: #2a2a2a;
+  border-color: #ffd700;
+}
+
+.selector-btn:active {
+  transform: scale(0.95);
+}
+
+.selector-btn img {
+  width: 50px;
+  height: 50px;
+}
+
+.selector-btn span {
+  color: #fff0d4;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.multi-dice-area {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px dashed #fff0d4;
+  border-radius: 10px;
+  min-height: 250px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.empty-message {
+  color: #fff0d4;
+  opacity: 0.6;
+  font-size: 18px;
+  text-align: center;
+}
+
+.multi-die {
+  background-color: #0f0f0f;
+  border: 2px solid #fff0d4;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  animation: diceAppear 0.3s ease-in-out;
+}
+
+@keyframes diceAppear {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.multi-die img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 0px;
+}
+
+.multi-die .die-number {
+  color: #fff0d4;
+  font-size: 24px;
+  font-weight: 900;
+  margin-top: 8px;
+  z-index: 1;
+}
+
+.multi-die .die-label {
+  color: #fff0d4;
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 0px;
+}
+
+.remove-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #0f0f0f;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.remove-btn:hover {
+  background-color: #ff0000;
+  transform: scale(1.1);
+}
+
+.multi-dice-controls {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.sum-display {
+  background-color: #1a1a1a;
+  border: 3px solid #ffd700;
+  border-radius: 8px;
+  color: #ffd700;
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 150px;
+  justify-content: center;
+}
+
+.sum-display .sum-label {
+  font-weight: 600;
+}
+
+.sum-display .sum-value {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.control-btn {
+  background-color: #1a1a1a;
+  border: 2px solid #fff0d4;
+  border-radius: 8px;
+  color: #fff0d4;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-family: "Eczar", serif;
+}
+
+.control-btn:hover {
+  transform: scale(1.05);
+  background-color: #2a2a2a;
+}
+
+.control-btn:active {
+  transform: scale(0.95);
+}
+
+.roll-all-btn:hover {
+  border-color: #90ee90;
+  color: #90ee90;
+}
+
+.clear-btn:hover {
+  border-color: #ff4444;
+  color: #ff4444;
+}
+
+.multi-die.rolling img {
+  animation: rodoNunca 2s both;
+}
+
+@media all and (max-width: 800px) {
+  .grid {
     padding: 30px;
     display: grid;
     grid-gap: 30px;
     column-gap: 20px;
     row-gap: 70px;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows:  220px 220px 220px;
+    grid-template-columns: 300px;
     justify-content: center;
     justify-items: center;
     align-content: center;
     align-items: center;
-}
-
-.numero{
-    font-size: 30px;
-    color: black;
-    font-weight: 900;
-    position: absolute;
-    top: 28%;
-    width: 100%;
-    left: 0%;
-    z-index: 1;
-}
-
-#numero4{
-    top: 32%;
-    animation-name: rodoNunca;
-    animation-iteration-count: 1;
-    animation-duration: 2s;
-    animation-fill-mode: both;
-}
-
-#numero6{
-    animation-name: rodoNunca;
-    animation-iteration-count: 1;
-    animation-duration: 2s;
-    animation-fill-mode: both;
-}
-
-#numero8{
-    animation-name: rodoNunca;
-    animation-iteration-count: 1;
-    animation-duration: 2s;
-    animation-fill-mode: both;
-}
-
-#numero10{
-    animation-name: rodoNunca;
-    animation-iteration-count: 1;
-    animation-duration: 2s;
-    animation-fill-mode: both;
-}
-
-#numero12{
-    animation-name: rodoNunca;
-    animation-iteration-count: 1;
-    animation-duration: 2s;
-    animation-fill-mode: both;
-}
-
-#numero20{
-    font-size: 22px;
-    top: 32%;
-    animation-name: rodoNunca;
-    animation-iteration-count: 1;
-    animation-duration: 2s;
-    animation-fill-mode: both;
-}
-
-#numero10z{
-    left: 87px;
-    animation-name: rodoNunca;
-    animation-iteration-count: 1;
-    animation-duration: 2s;
-    animation-fill-mode: both;
-}
-
-#numero100{
-    left: -85px;
-    animation-name: rodoNunca;
-    animation-iteration-count: 1;
-    animation-duration: 2s;
-    animation-fill-mode: both;
-}
-
-@keyframes rodoNunca{
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(1800deg);
-    }
   }
 
-@media all and (max-width: 800px){
-    .grid {
-        padding: 30px;
-        display: grid;
-        grid-gap: 30px;
-        column-gap: 20px;
-        row-gap: 70px;
-        grid-template-columns: 300px;
-        justify-content: center;
-        justify-items: center;
-        align-content: center;
-        align-items: center;
-    }
+  .botaozao {
+    background-color: #0f0f0f;
+    border-radius: 10px;
+    border: 3px solid #fff0d4;
+    width: 200px;
+    height: 400px;
+  }
 
-    .botaozao{
-        background-color: #0F0F0F;
-        border-radius: 10px;
-        border: 3px solid #FFF0D4;
-        width: 200px;
-        height: 400px;
-    }
+  .gridteste {
+    display: grid;
+    grid-template-columns: auto;
+  }
 
-    .gridteste{
-        display: grid;
-        grid-template-columns: auto;
-    }
+  #numero10z {
+    top: 55%;
+    left: 1px;
+    animation-name: rodoNunca;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+  }
 
-    #numero10z{
-        top: 55%;
-        left: 1px;
-        animation-name: rodoNunca;
-        animation-iteration-count: 1;
-        animation-duration: 2s;
-        animation-fill-mode: both;
-    }
+  #numero100 {
+    top: 17%;
+    left: 1px;
+    animation-name: rodoNunca;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+  }
 
-    #numero100{
-        top: 17%;
-        left: 1px;
-        animation-name: rodoNunca;
-        animation-iteration-count: 1;
-        animation-duration: 2s;
-        animation-fill-mode: both;
-    }
+  .titulo {
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    color: #fff0d4;
+    padding: 30px;
+  }
 
-    .titulo{
-        display: flex;
-        justify-content: center;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 30px;
-        color: #FFF0D4;
-        padding: 30px;
-    }
+  .blocao1 {
+    display: none;
+  }
 
-    .blocao1{
-        display: none;
-    }
+  .multi-dice-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .multi-dice-header h2 {
+    font-size: 25px;
+  }
+
+  .dice-selector {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .selector-btn {
+    width: 90px;
+    height: 90px;
+    font-size: 14px;
+  }
+
+  .selector-btn img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .multi-dice-area {
+    min-height: 200px;
+    padding: 15px;
+  }
+
+  .multi-die {
+    width: 80px;
+    height: 120px;
+    margin: 5px;
+  }
+
+  .multi-die img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .multi-die .die-number {
+    font-size: 20px;
+    margin-top: 0;
+  }
+
+  .multi-die .remove-btn {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    top: 3px;
+    right: 3px;
+  }
+
+  .control-btn {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+
+  .sum-display {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+footer {
+  margin-top: 80px;
+  padding: 40px 20px;
+  background-color: #000000;
+  border-top: 1px solid rgba(255, 240, 212, 0.2);
+  color: #fff0d4;
+  text-align: center;
+}
+
+.footer-content p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.social-links a {
+  color: #fff0d4;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+
+.social-links a:hover {
+  color: #ffd700;
+  border-color: rgba(255, 215, 0, 0.4);
+  transform: translateY(-3px);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+@media all and (max-width: 800px) {
+  footer {
+    margin-top: 40px;
+    padding: 30px 15px;
+  }
+
+  .social-links {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  body {
+    background-image: radial-gradient(
+      50% 90% at 50% 50%,
+      rgba(255, 0, 0, 0.25) 0%,
+      rgba(217, 217, 217, 0) 100%
+    );
+    background-attachment: fixed;
+  }
 }
